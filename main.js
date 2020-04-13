@@ -33,10 +33,10 @@ function load(){
     const intervalID = setInterval(function(){
         if(currentWidth<=100){
             progress.style.width = currentWidth + "%"
-            currentWidth++;
+            currentWidth += 5;
         }else{
             clearInterval(intervalID);
         }
-    },60)
+    },200)
 }
 
